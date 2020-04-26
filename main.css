@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(pikachu-triste-fanart_2560x1600_xtrafondos.com.jpg);
+}
+
+.calculadora{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+.buttons{
+   cursor: pointer;
+   font-size: 2rem;
+   border: 1px solid rgb(243, 208, 208);
+   outline: none;
+   background-color: rgba(118, 124, 126, 0.671); 
+}
+.buttons:hover{
+    background-color: rgba(199, 170, 127, 0.507);
+}
+
+.Display{
+grid-column: 1 /-1;
+background-color: rgba(221, 141, 21, 0.945);
+display: flex;
+align-items: flex-end;
+justify-content: center;
+flex-direction: column;
+padding: 10px;
+word-wrap: break-word;
+word-break: break-all;
+}
+
+.Display #displayinput{
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+
+}
+
